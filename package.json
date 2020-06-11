@@ -1,0 +1,29 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HawkeW/blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HawkeW/blog/issues"
+  },
+  "homepage": "https://github.com/HawkeW/blog#readme",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.5.1",
+    "@vuepress/plugin-nprogress": "^1.5.1",
+    "@vuepress/plugin-pwa": "^1.5.1",
+    "@vuepress/theme-blog": "^2.2.0",
+    "vuepress": "^1.5.1"
+  }
+}
