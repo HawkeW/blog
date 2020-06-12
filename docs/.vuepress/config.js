@@ -1,5 +1,4 @@
 module.exports = {
-    theme: '@vuepress/blog',
     title: '一度的博客',
     description: '前端学习与技术分享',
     base:'/blog/',
@@ -11,23 +10,22 @@ module.exports = {
     themeConfig:{
         nav: [
             { text: "主页", link: "/" },
-            { text: "前端", link: "/web/" },
+            { text: "前端", 
+            items:[
+                { text: 'CSS', link: '/frontend/css/' },
+                { text: 'JavaScript', link: '/frontend/javascript/' }
+              ],
+            },
             { text: "uniapp", link: "/uniapp/" },
             { text: "随笔", link: "/article/" },
           ],
         sidebar: {
-            "/web/":[
-                ["","前端"],
-                {
-                    title:"css",
-                    name:"css",
-                    path:'/web/css/',
-                    collapsable: true,
-                    sidebarDepth:0,
-                    children:[
-                        "css/1",
-                    ]
-                }
+            '/frontend/css/':[
+                ['','css'],
+            ],
+            '/frontend/javascript/':[
+                ['','JavaScript'],
+                
             ],
         
         },
