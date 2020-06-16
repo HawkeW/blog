@@ -1,9 +1,13 @@
 ---
 layout: post
-title:  "jQuery事件及表单全选、全不选、反选变化练习"
+title:  jQuery事件及表单全选、全不选、反选变化练习
 date:   2019-12-06 18:40:00 +0800
-categories: 前端学习
-tags: 前端, 表单, jQuery
+categories:
+  - 前端
+tags: 
+ - 前端
+ - JavaScript
+ - jQuery
 excerpt: 前端笔记：jQuery实现表单全选、全部选、反选等功能 
 typora-root-url: ..
 ---

@@ -1,6 +1,6 @@
 module.exports = {
-    title: '一度的博客',
-    description: '前端学习与技术分享',
+    title: 'Once°',
+    theme: 'reco',
     base:'/blog/',
     head:[
       ['link', { rel: 'icon', href: '/logo.png' }],
@@ -8,28 +8,44 @@ module.exports = {
       ['link', { rel: 'manifest', href: '/manifest.json' }],
     ],
     themeConfig:{
-        nav: [
-            { text: "主页", link: "/" },
-            { text: "前端", 
-            items:[
-                { text: 'CSS', link: '/frontend/css/' },
-                { text: 'JavaScript', link: '/frontend/javascript/' }
-              ],
-            },
-            { text: "uniapp", link: "/uniapp/" },
-            { text: "随笔", link: "/article/" },
-          ],
-        sidebar: {
-            '/frontend/css/':[
-                ['','css'],
-            ],
-            '/frontend/javascript/':[
-                ['','JavaScript'],
-                
-            ],
-        
+      type:'blog',
+      authorAvatar: '/avatar.jpg',
+      logo: '/logo.jpg',
+      author: '一度',
+      sidebar: 'auto',
+        // 博客配置
+      blogConfig: {
+        category: {
+          location: 2,     // 在导航栏菜单中所占的位置，默认2
+          text: 'Category' // 默认文案 “分类”
         },
-        displayAllHeaders: true
+        tag: {
+          location: 3,     // 在导航栏菜单中所占的位置，默认3
+          text: 'Tag'      // 默认文案 “标签”
+        }
+      },
+      nav: [
+          { text: "主页", link: "/" },
+          { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
+          { text: "前端", 
+          items:[
+              { text: 'CSS', link: '/frontend/css/' },
+              { text: 'JavaScript', link: '/frontend/javascript/' }
+            ],
+          },
+          { text: "uniapp", link: "/uniapp/" },
+          { text: "随笔", link: "/article/" },
+        ],
+    //   sidebar: {
+    //       '/frontend/css/':[
+    //           ['','css'],
+    //       ],
+    //       '/frontend/javascript/':[
+    //           ['','JavaScript'],
+              
+    //       ],
+    //   },
+      displayAllHeaders: true
     },
     plugins:[
         ["@vuepress/back-top"],

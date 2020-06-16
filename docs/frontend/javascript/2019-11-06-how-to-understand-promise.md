@@ -1,10 +1,13 @@
 ---
 layout: post
-title: "简单理解Promise"
+title: 简单理解Promise
 date: 2019-11-06 16:44:00 +0800
-categories: 前端学习
+categories: 
+ - 前端
 excerpt: 前端学习笔记:Promise(一):简单理解Promise
-tags: Promise,前端
+tags: 
+ - JavaScript
+ - 前端
 typora-root-url: ..
 main_image: '\images\mainimage\4-skateboarder-rides-past.jpg'
 ---
@@ -34,7 +37,7 @@ main_image: '\images\mainimage\4-skateboarder-rides-past.jpg'
 
  下面代码创造了一个`Promise`实例。  
 
-```
+```js
 const promise = new Promise(function(resolve, reject) {
   // ... some code
 
@@ -75,7 +78,7 @@ JavaScript引擎对`Promise`对象接收的函数`function(resolve, reject)`提�
 
 - 使用`then`
 
-```
+```js
 promise.then(function(value) {
   // success
 }, function(error) {
@@ -85,7 +88,7 @@ promise.then(function(value) {
 
 - 使用`then`和`catch`
 
-``` 
+``` js
 promise.then(function(value) {
   // success
 }.catch(function(error) {

@@ -1,3 +1,17 @@
+---
+layout: post
+title:  JavaScript基础测试题
+date:   2020-06-13 15:30:00 +0800
+categories: 
+ - 前端
+tags: 
+ - 习题
+ - JavaScript
+excerpt: 习题练习
+typora-root-url: ..
+---
+
+
 ### 第 1 题
 
 ```js

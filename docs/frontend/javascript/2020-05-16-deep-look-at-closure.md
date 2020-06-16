@@ -1,8 +1,11 @@
 ---
 layout: post
-title:  "深入了解闭包"
+title:  深入了解闭包
 date:   2020-05-16 15:30:00 +0800
-categories: 前端学习
+categories: 
+ - 前端
+tags: 
+ - JavaScript
 excerpt: 关于闭包
 typora-root-url: ..
 ---
