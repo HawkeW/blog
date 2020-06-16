@@ -30,18 +30,12 @@ module.exports = {
           text: 'Tag'      // 默认文案 “标签”
         }
       },
-      // nav: [
-      //     { text: "主页", link: "/" },
-      //     { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
-      //     { text: "前端", 
-      //     items:[
-      //         { text: 'CSS', link: '/frontend/css/' },
-      //         { text: 'JavaScript', link: '/frontend/javascript/' }
-      //       ],
-      //     },
-      //     { text: "uniapp", link: "/uniapp/" },
-      //     { text: "随笔", link: "/article/" },
-      //   ],
+      nav: [
+          { text: "主页", link: "/" },
+          { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
+          { text: "项目", link: "/uniapp/" },
+          { text: "随笔", link: "/article/" },
+        ],
       // sidebar: {
           // '/frontend/css/':[
           //     ['','css'],
