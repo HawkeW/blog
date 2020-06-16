@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  一个前端学习的todo list
-date:   2020-05-11 16:45:00 +0800
+title:  【随笔】一个前端学习的todo list
+date:   2020-05-11 16:45:00
 categories: 
  - 随笔
 tags: 

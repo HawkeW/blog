@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  JavaScript基础测试题
-date:   2020-06-13 15:30:00 +0800
+title:   【JS】JavaScript基础测试题
+date:   2020-06-13 15:30:00
 categories: 
  - 前端
 tags: 
@@ -12,7 +12,7 @@ typora-root-url: ..
 ---
 
 
-### 第 1 题
+## 第 1 题
 
 ```js
 if(false){
@@ -25,7 +25,7 @@ console.log(b);
 
 `a`变量提升，成功打印; `b`let 定义，查找不到，报索引错误`b is not defined`
 
-### 第 2 题
+## 第 2 题
 
 ```js
 var a = 1;
@@ -37,7 +37,7 @@ if(true){
 
 `let`锁定`if(){}`中的变量，但是会报索引错误
 
-### 第 3 题
+## 第 3 题
 
 ```js
 var a = {n: 1}
@@ -69,7 +69,7 @@ a.x//undefined
 b.n//1
 b.x//{ n : 2 }
 ```
-### 第 4 题
+## 第 4 题
 
 ```js
 console.log(c);
@@ -107,7 +107,7 @@ function a(){
 }
 ```
 
-### 第 5 题
+## 第 5 题
 
 ```js
 var c = 1;
@@ -142,7 +142,7 @@ console.log(c) //1
 c(2)// TypeError: c is not a function
 ```
 
-### 第 6 题
+## 第 6 题
 
 ```js
 var name = 'xiaoming';
@@ -175,7 +175,7 @@ var name = 'xiaoming';
 })();
 ```
 
-### 第 7 题
+## 第 7 题
 
 ```js
 var a = 10;  
@@ -195,7 +195,7 @@ test();
 
 100
 
-### 第 8 题
+## 第 8 题
 
 ```js
 if (!('a' in window)) {
@@ -206,7 +206,7 @@ console.log(a);
 
 undefined
 
-### 第 9 题
+## 第 9 题
 
 ```js
 var a = 1;
@@ -238,7 +238,7 @@ undefined
 
 2
 
-### 第 10 题
+## 第 10 题
 
 ```js
 var val=1;
@@ -275,7 +275,7 @@ obj{} //准确的说是obj的值，包括继承的原型__proto__等
 4
 ```
 
-### 第 11 题
+## 第 11 题
 
 ```js
 var name = "xiaoming";
@@ -294,7 +294,7 @@ console.log(object.getNameFunc()());
 
 xiaoming
 
-### 第 12 题
+## 第 12 题
 
 ```js
 var name = "xiaoming";
@@ -322,7 +322,7 @@ chen
 
 执行返回的函数`(function(){ return object.name })()`，最终打印`chen`
 
-### 第 13 题
+## 第 13 题
 
 ```js
 (function() {
@@ -340,7 +340,7 @@ false
 
 执行过程
 
-### 第 14 题
+## 第 14 题
 
 ```js
 var a = 6;
@@ -352,7 +352,7 @@ console.log(a);
 
 6
 
-### 第 15 题
+## 第 15 题
 
 ```js
 function fn1() {
@@ -372,7 +372,7 @@ f();
 
 4
 
-### 第 16 题
+## 第 16 题
 
 ```js
 var a = (function(foo){
@@ -386,7 +386,7 @@ console.log(a);
 
 undefined
 
-### 第 17 题
+## 第 17 题
 
 ```js
 function f(){
@@ -405,7 +405,7 @@ undefined
 
 - `new f()` 返回值为 `f()`，而不是类`f()`的实例，没有继承关系
 
-### 第 18 题
+## 第 18 题
 
 ```js
 function A () {
