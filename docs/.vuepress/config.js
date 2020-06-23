@@ -52,20 +52,12 @@ module.exports = {
         ["@vuepress/nprogress"],
         ["@vuepress-reco/vuepress-plugin-bgm-player",{
           audios: [
-            // 本地文件示例
             {
               name: 'Home~in this corner~',
               artist: 'Leina',
               url: '/blog/assets/music/1.mp3',
               cover: '/blog/assets/music/1.jpg'
             },
-            // 网络文件示例
-            // {
-            //   name: '강남역 4번 출구',
-            //   artist: 'Plastic / Fallin` Dild',
-            //   url: 'https://assets.smallsunnyfox.com/music/2.mp3',
-            //   cover: 'https://assets.smallsunnyfox.com/music/2.jpg'
-            // }
           ],
         }],
         ['@vuepress/pwa', {
