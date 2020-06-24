@@ -90,16 +90,34 @@ Vue.use(VueRouter)
 在官方文档中，`vue router`的创建分为四步：
 
  1. 定义 (路由) 组件。
- 2. 定义路由
- 3. 创建 router 实例
- 4. 挂载 router 到根实例
 
- 对比
+```js
+const Foo = template: '<div>foo</div>';
+const Bar = template: '<div>bar</div>';
+```
 
-::: tip
-vue router在vue项目中的初次使用，相对`uniapp`而言稍微复杂一些。当然，`uniapp`是vue的进一步封装和集合，做到这一步似乎也是理所应当的。
-`uniapp`中的路由跳转，省去了“创建 router 实例”和“挂载 router 到根实例”两步操作。
-:::
+2. 定义路由
+
+```js
+const routes = [
+    { path:'/foo', component: Foo },
+    { path: '/bar', component: Bar }
+]
+```
+
+3. 创建 router 实例
+
+```js
+const router = { routes //routes: routes的缩写 }
+```
+
+4. 挂载 router 到根实例
+
+```js
+const app = new Vue({
+  router
+}).$mount('#app')
+```
 
 当 `router` 被挂载到根实例后，可以通过 `this.$router` 访问路由器。
 
@@ -147,8 +165,6 @@ router.push({ name: 'user', params: { userId: '123' }})
 router.push({ path: 'register', query: { plan: 'private' }})
 ```
 
-
-
 ```js
 const userId = '123'
 router.push({ name: 'user', params: { userId }}) // -> /user/123
@@ -180,8 +196,6 @@ router.go(3)
 router.go(-100)
 router.go(100)
 ```
-
-
 
 `vue router`实际是效仿`window.history` API的。 上述的调用，分别对应着`window.history.pushState`，`window.history.replaceState`，`window.history.go`
 
@@ -436,7 +450,7 @@ router.push({ name: 'user', params: { userId: 123 }})
 
 - 所以，可以通过`props`进行解耦，使得组件有更高的复用性，且易于测试
 
-**传参方式**
+### 传参方式
 
 - 布尔模式
 
@@ -480,15 +494,27 @@ const router = new VueRouter({
 })
 ```
 
-组件在接收传入的`props`时，有两种方式——
+### 接收参数
 
-1. `props`接收属性名后，通过插槽获取 
-2. 直接通过`$+属性名`获取
+组件在接收参数时，有两种方式——
+
+1. 通过`props`接收参数获取 
+2. 直接通过`$attr`获取`router-view`中不作为 prop 被识别 (且获取) 的 `attribute` 绑定。
 
 ```js
+...
+	<router-view class="view" foo="attr1" bar="attr2"></router-view>
+...
+const routes =[
+    { path: '/attrs', component: Hello, props: { name: 'World' }},
+]
+```
+
+```js
+//Hello.vue
 <template>
   <div>
-    <h2 class="hello">Hello {{name}} {{ $attrs }}</h2>
+    <h2 class="hello">Hello {{name}} {{ $attrs }} </h2>
   </div>
 </template>
 
@@ -504,5 +530,6 @@ export default {
 </script>
 ```
 
+`/attrs`页面：
 
-
+**Hello World { "foo" : "attr1", bar: "attr2" }**
