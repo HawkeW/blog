@@ -25,7 +25,16 @@
 **注意事项**:
 
 1. 页面设置为自定义导航栏时，需要设置一个`status-bar`的占位高度，否则内容会直接顶到顶部。`nvue`中可以通过获取状态栏高度+动态style的方式，其他模式可以直接使用uniapp的[`css`变量](https://uniapp.dcloud.io/frame?id=css%e5%8f%98%e9%87%8f) `var(--status-bar-height)`设置占位块的高度。
-2. 使用`navBar`插件实现导航栏搜索框，如果需要修改搜索框两侧占位`button`的宽度，需要修改`uni-nav-bar.vue`插件源码中的样式中`uni-navbar__header-btns-left`、`uni-navbar__header-btns-right`、`uni-navbar__header-btns`的宽度`width`值。如果你使用`slot`插槽去设置左右占位`button`的宽度，也可以直接注释掉这几个样式的`width`。
+
+```js
+<!-- 顶部状态栏 -->
+<view :style="`height: ${iStatusBarHeight}px;`" class="status-bar"></view>
+<!-- 顶部状态栏 -->
+```
+
+
+
+1. 使用`navBar`插件实现导航栏搜索框，如果需要修改搜索框两侧占位`button`的宽度，需要修改`uni-nav-bar.vue`插件源码中的样式中`uni-navbar__header-btns-left`、`uni-navbar__header-btns-right`、`uni-navbar__header-btns`的宽度`width`值。如果你使用`slot`插槽去设置左右占位`button`的宽度，也可以直接注释掉这几个样式的`width`。
 
 ### 二. 原生`searchInput`实现
 
