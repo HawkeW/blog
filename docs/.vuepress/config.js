@@ -2,7 +2,7 @@ module.exports = {
     title: 'Once° 一度',
     theme: 'reco',
     description:'Once I live, once I aim',
-    base:'/blog/',
+    // base:'/blog/',
     head:[
       ['link', { rel: 'icon', href: '/favicon.ico' }],
       ['meta', { name: 'theme-color', content: '#3eaf7c' }],
@@ -55,8 +55,8 @@ module.exports = {
             {
               name: 'Home~in this corner~',
               artist: 'Leina',
-              url: '/blog/assets/music/1.mp3',
-              cover: '/blog/assets/music/1.jpg'
+              url: '/assets/music/1.mp3',
+              cover: '/assets/music/1.jpg'
             },
           ],
         }],
