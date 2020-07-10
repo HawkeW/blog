@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  【随笔】又是一个枯燥的周六
-date:   2020-06-20
+title: 【随笔】又是一个枯燥的周六
+date: 2020-06-20
 categories: 
  - 随笔
 tags: 
- - 日常
+ - 随笔
 
 sidebar: false
 typora-root-url: ..\.vuepress\public

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  【JS】JavaScript基础与进阶--学习路线
-date:   2020-06-16 16:30:00
+date:   2020-06-16
 categories: 
  - 前端
 tags: 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  【随笔】一个前端学习的todo list
-date:   2020-05-11 16:45:00
+title: 【随笔】一个前端学习的todo list
+date: 2020-05-11
 categories: 
  - 随笔
 tags: 

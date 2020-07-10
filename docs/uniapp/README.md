@@ -1,10 +1,10 @@
 ---
-title:  实战经验
-date:   2020-06-16 18:50:00
-categories: 
- - uniapp
+title:  一些作品预览
+date:   2020-06-16
 tags: 
- - uniapp
+ - 项目
+sticky:
+- 1
 typora-root-url: ..
 ---
 

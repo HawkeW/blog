@@ -1,71 +1,16 @@
 ---
-title:  vue router 速览
-date:   2020-06-22
+title:  【学习笔记】Vue Router 速览 -- 官方文档
+date: 2020-06-22
 categories: 
- - vue
+ - 前端
 tags: 
  - vue
- - vue router
 typora-root-url: ..\.vuepress\public
 ---
 
-在`uniapp`对页面进行管理，是通过在`page.json`中进行配置，然后使用调用 `uni.navigateTo()`、`uni.reLauch()`、`uni.redirectTo()`、`uni.switchTab()`等`uniapp`封装的`api`进行页面跳转。`uniapp`也支持在`html`中使用`navigator`组件进行快速的页面跳转。
+之前学习`vue`基础部分之后，接手的项目和方向就直接调整为`uni-app`了，所以就一直没有什么机会去使用`vue router`去管理页面。
 
-```js
-//HTML中使用 navigator组件 进行页面跳转
-<navigator src="pages/home/home">跳转到主页</navigator>
-
-//JS中调用api跳转
-//非 tabBar 页面
-uni.navigateTo({
-    url:"pages/details/details"
-})
-//tabBar 页面
-uni.switchTab({
-    url:"pages/my/my"
-})
-```
-
-```js
-{
-    "pages": [{
-        "path": "pages/index/index",
-        "style": {
-            "navigationBarTitleText": "首页"
-        }
-    }, {
-        "path": "pages/details/details",
-        "style": {
-            "navigationBarTitleText": "详情"
-        }
-    }, {
-        "path": "pages/my/my",
-        "style": {
-            "navigationBarTitleText": "我的"
-        }
-    },{
-        "path": "pages/home/home",
-        "style": {
-            "navigationBarTitleText": "主页"
-        }
-    }],
-    "tabBar": {
-        "list": [{
-            "pagePath": "pages/index/index",
-            "text": "首页"
-        }, {
-            "path": "pages/my/my",
-            "text": "我的"
-        }],
-    },
-}
-```
-
-
-
-之前学习`vue`基础部分之后，接手的项目和方向就直接调整为`uniapp·了，所以就一直没有什么机会去使用vue router去管理页面。
-
-那么这次主要是通过一下午的速览，来快速了解`vue router`的基本使用和处理方法，同时也和现在已经使用过的`uniapp`跳转方式进行对比学习。
+那么这次主要通过速览的方式，通过文档了解和学习`vue router`的基本使用和处理方法。**注：学习笔记，内容与官方文档基本一致！**
 
 ## 安装和基本使用
 
@@ -123,7 +68,7 @@ const app = new Vue({
 
 #### 使用
 
-1. 在html中使用`<router-link>`和`<router-view>`组件。
+1. 在`html`中使用`<router-link>`和`<router-view>`组件。
 
 ```js
  <div id="app">

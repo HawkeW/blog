@@ -1,7 +1,7 @@
 ---
 layout: post
 title:   【JS】JavaScript基础测试题
-date:   2020-06-13 15:30:00
+date:   2020-06-13
 categories: 
  - 前端
 tags: 

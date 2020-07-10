@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  【教程向】如何在 Chromium 同步谷歌账号
-date:   2020-07-01
+title: 【教程向】如何在 Chromium 同步谷歌账号
+date: 2020-07-01
 categories: 
- - 教程
+ - 其他
 tags: 
  - Chrome
 
