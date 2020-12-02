@@ -73,7 +73,14 @@ greeter(user);
 6. Void
 7. Null和Undefined
 8. Never
+<<<<<<< HEAD
 9. Object
+=======
+<<<<<<< HEAD
+=======
+9. Object
+>>>>>>> master
+>>>>>>> newB
 
 ```
 // boolean
@@ -133,4 +140,11 @@ function infiniteLoop(): never {
     }
 }
 ```
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
+>>>>>>> newB
