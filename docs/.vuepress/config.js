@@ -2,7 +2,7 @@ module.exports = {
     title: 'Once° 一度', //博客标题，浏览器标签显示的内容
     theme: 'reco',
     description:'Once I live, once I aim',
-    // base:'/blog/',
+    base:'/blog/',
     head:[
       ['link', { rel: 'icon', href: '/favicon.ico' }],//浏览器标签上显示的icon
       ['meta', { name: 'theme-color', content: '#3eaf7c' }],//主题颜色
