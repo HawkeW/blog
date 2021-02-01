@@ -2,7 +2,7 @@
 title:  Electron 学习 01： 运行第一个 electron 客户端
 date:   2020-12-03 17:14:00
 categories: 
- - Frontend
+ - 前端
 tags: 
  - Electron
 ---
@@ -10,7 +10,7 @@ tags:
 #### 环境配置
 - 安装`node`和`npm`：官网安装
 - 创建项目并在项目中安装`electron`：
-```
+```bash
 mkdir my-electron-app && cd my-electron-app
 npm init -y
 npm i --save-dev electron

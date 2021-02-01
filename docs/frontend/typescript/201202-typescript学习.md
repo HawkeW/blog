@@ -2,7 +2,7 @@
 title:  TypeScript - 初步学习TS
 date:   2020-12-02 17:34:00
 categories: 
- - Frontend
+ - 前端
 tags: 
  - TypeScript
 ---
@@ -11,25 +11,25 @@ tags:
 #### 安装
 - npm安装 
 - VS插件
-```
+```bash
 npm install -g typescript
 ```
 
 #### 编译代码
 命令行运行:
-```
+```bash
 tsc xxx.ts
 ```
 #### 使用
 - 类型注解
-```
+```Javascript
 function greeter(person: string) {
     console.log("Hello, " + person);
 }
 greeter("Jane")
 ```
 - 接口(interface)
-```
+```Javascript
 interface Person {
     firstName: string;
     lastName: string;
@@ -42,7 +42,7 @@ greeter(user)
 
 ```
 - 类
-```
+```Javascript
 class Student {
     fullName: string;
     constructor(firstName, middleInitial, lastName) {
@@ -75,7 +75,7 @@ greeter(user);
 8. Never
 9. Object
 
-```
+```Javascript
 // boolean
 let isDone: boolean = false; 
 // number

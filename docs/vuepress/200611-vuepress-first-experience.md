@@ -1,8 +1,8 @@
 ---
-title:  vuepress 快速搭建博客
+title:  vuepress 初体验：快速搭建博客
 date:   2020-06-11
 categories: 
- - 主题
+ - 博客
 tags: 
  - vuepress
 typora-root-url: ..

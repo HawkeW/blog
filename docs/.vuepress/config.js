@@ -2,7 +2,7 @@ module.exports = {
     title: 'Once° 一度', //博客标题，浏览器标签显示的内容
     theme: 'reco',
     description:'Once I live, once I aim',
-    base:'/blog/',
+    base:'',
     head:[
       ['link', { rel: 'icon', href: '/favicon.ico' }],//浏览器标签上显示的icon
       ['meta', { name: 'theme-color', content: '#3eaf7c' }],//主题颜色
@@ -19,20 +19,27 @@ module.exports = {
         appId: 'bvN3KWqAgpLl13jibG4RMbFM-gzGzoHsz',// your appId
         appKey: 'YH74CiOC6QspPUOsbqSvakEP' // your appKey
       },
+      // 备案
+      // record: '一度杂言',
+      // recordLink: 'ICP 备案指向链接',
+      // cyberSecurityRecord: '公安部备案文案',
+      // cyberSecurityLink: '公安部备案指向链接',
+    // 项目开始时间，只填写年份
+    startYear: '2021',
         // 博客配置
       blogConfig: {
         category: {
           location: 2,     // 在导航栏菜单中所占的位置，默认2
-          text: 'Category' // 默认文案 “分类”
+          text: '分类' // 默认文案 “分类”
         },
         tag: {
           location: 3,     // 在导航栏菜单中所占的位置，默认3
-          text: 'Tag'      // 默认文案 “标签”
+          text: '标签'      // 默认文案 “标签”
         }
       },
       nav: [
           { text: "主页", link: "/" },
-          { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
+          { text: '时间线', link: '/timeline/', icon: 'reco-date' },
           { text: "项目", link: "/uniapp/" },
           { text: "随笔", link: "/article/" },
         ],
@@ -64,5 +71,5 @@ module.exports = {
             serviceWorker: true,
             updatePopup: true
           }]
-    ]
+    ],
 }
