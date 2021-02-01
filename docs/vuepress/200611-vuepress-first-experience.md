@@ -2,10 +2,10 @@
 title:  vuepress 初体验：快速搭建博客
 date:   2020-06-11
 categories: 
- - 博客
+ - vuepress
 tags: 
  - vuepress
-typora-root-url: ..
+typora-root-url: ..\.vuepress\public
 ---
 
 ## 基础配置

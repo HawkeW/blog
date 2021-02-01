@@ -7,7 +7,7 @@ categories:
 tags: 
  - 前端
 excerpt: 长期更新……
-typora-root-url: ..
+typora-root-url: ..\.vuepress\public
 ---
 本来应该做一个网页端的todo list来放这里的内容。不过近期还是挺忙的，所以先往后推推。
 这个todo list也是为了防止自己在学习过程手忙脚乱，所以以周为节点进行项目进度和学习进度的跟进记录。

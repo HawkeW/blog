@@ -2,10 +2,10 @@
 title:  vuepress 创建和使用你的博客：环境，目录与配置
 date:   2021-02-01 18:50:00
 categories: 
- - 博客
+ - vuepress
 tags: 
  - vuepress
-typora-root-url: ..
+typora-root-url: ..\.vuepress\public
 ---
 
 ## 前置环境
@@ -51,9 +51,9 @@ typora-root-url: ..
 
 然后打开[进入我的blog仓库](https://gitee.com/onceonce/blog)点击`fork`，这一步操作会把我的代码复制到你的`blog`仓库中
 
-![img](\create-your-blog\1.png)
+![Gitee，一度的blog仓库](/assets/img/09-create-use-blog/01-onceonce-blog.png)
 
-![image-20200714105433780](\create-your-blog\2.png)
+![Gitee，fork一度的blog仓库](/assets/img/09-create-use-blog/01-onceonce-blog-fork.png)
 
 ### clone代码到本地
 
@@ -67,7 +67,7 @@ typora-root-url: ..
 
 - 当然，最简单的是在浏览器窗口复制一下
 
-![image-20200714110616077](\create-your-blog\3.png)
+![Gitee，一度的blog仓库的地址](/assets/img/09-create-use-blog/01-onceonce-blog-url.png)
 
 **`clone`代码到本地**
 
@@ -79,11 +79,11 @@ $ git clone https://gitee.com/onceonce/blog
 
 克隆成功后， 你可以在本地看到刚刚克隆的文件夹和其中的代码。
 
-![image-20200714112207092](\create-your-blog\4.png)
+![克隆blog仓库](/assets/img/09-create-use-blog/02-clone-operation.png)
 
-![image-20200714112228521](\create-your-blog\5.png)
+![克隆到本地的文件夹](/assets/img/09-create-use-blog/02-clone-operation-local.png)
 
-![image-20200714112237947](\create-your-blog\6.png)
+![博客文件夹的目录](/assets/img/09-create-use-blog/02-clone-operation-local-directory.png)
 
 ## Vuepress
 
@@ -101,7 +101,7 @@ npm install -D vuepress
 
 复制刚刚克隆的`blog`文件夹的路径。
 
-![image-20200714112736141](\create-your-blog\7.png)
+![复制博客文件夹路径](/assets/img/09-create-use-blog/02-local-path.png)
 
 我的是在桌面：`C:\Users\Administrator\Desktop\blog`
 
@@ -111,7 +111,7 @@ npm install -D vuepress
 C:\Users\Administrator>cd C:\Users\Administrator\Desktop\blog
 ```
 
-![image-20200714112858539](\create-your-blog\8.png)
+![进入文件夹路径](/assets/img/09-create-use-blog/02-local-path-enter.png)
 
 如果你的文件夹不在C盘，还需要增加一步换盘符操作。
 
@@ -126,13 +126,13 @@ C:\Users\Administrator>E:
 
 进入文件夹后，输入`npm install`，安装这个博客需要的依赖包：
 
-![image-20200714113514345](\create-your-blog\9.png)
+![安装依赖](/assets/img/09-create-use-blog/03-install-dependencies.png)
 
-![image-20200714113655305](\create-your-blog\10.png)
+![安装依赖成功](/assets/img/09-create-use-blog/03-install-dependencies-finished.png)
 
 安装完成后，你可以看到刚刚的文件夹中多出了`node modules`
 
-<img src="\create-your-blog\11.png" alt="image-20200714113742864" style="zoom: 67%;" />
+<img src="/assets/img/09-create-use-blog/03-installed-node-modules.png" alt="image-20200714113742864" style="zoom: 67%;" />
 
 安装完项目需要的依赖，项目才可以正常在本地运行。
 
@@ -140,15 +140,15 @@ C:\Users\Administrator>E:
 
 继续输入`npm run dev`，等待加载完成后，就可以进入博客的本地开发环境了：
 
-![npm run dev](\create-your-blog\npm run dev.gif)
+![本地运行](/assets/img/09-create-use-blog/03-local-run.png)
 
 最后提示为：
 
-![image-20200714114845200](\create-your-blog\12.png)
+![image-20200714114845200](/assets/img/09-create-use-blog/03-local-run-success.png)
 
 现在，你可以在本地浏览器输入 http://localhost:8080 访问博客了
 
-![image-20200714115013651](\create-your-blog\13.png)
+![本地进入博客](/assets/img/09-create-use-blog/03-local-blog.png)
 
 以后在本地运行，只要进入在cmd进入当前目录，然后使用`npm run dev`命令就可以了
 
@@ -170,7 +170,7 @@ C:\Users\Administrator>E:
 - **deploy.sh**：这个文件是用于自动发布博客到你的仓库中去。**可以暂时忽略**
 - **package.json**和**package-lock.json**：这两个文件记录了博客需要的依赖，使用`npm install`命令安装的依赖就是从这里发现的。**可以暂时忽略**
 
-![image-20200714115159740](\create-your-blog\14.png)
+![博客文件夹目录](/assets/img/09-create-use-blog/04-directionory.png)
 
 #### /blog/docs目录
 
